@@ -1,0 +1,22 @@
+﻿<Window x:Class="Contador_Hilos.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Contador_Hilos"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="493*"/>
+            <ColumnDefinition Width="93*"/>
+            <ColumnDefinition Width="207*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock HorizontalAlignment="Left" x:Name="TextAutomatico" Margin="140,120,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" x:Name="TextManual" Margin="87.5,120,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Button Content="Iniciar Automático" x:Name="BotonAutomatico" HorizontalAlignment="Left" Margin="319,10,0,0" VerticalAlignment="Top" Width="75" Click="ButtonAutomatico_Click"/>
+        <Button Content="Aumentar" x:Name="ButtonManual" HorizontalAlignment="Left" Margin="53.5,35,0,0" VerticalAlignment="Top" Width="75" Click="ButtonManual_Click" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Button Name="BotonSecundario" Content="Aumentar" HorizontalAlignment="Left" Margin="106,35,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+
+    </Grid>
+</Window>
